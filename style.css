@@ -1,0 +1,109 @@
+:root {
+  --paper: #faf6ef;
+  --ink: #23201b;
+  --pine: #2f4b3c;
+  --brick: #a1432c;
+  --line: #e2d9c9;
+  --muted: #6f6a5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-weight: normal;
+  font-size: 2.25rem;
+  color: var(--pine);
+  margin: 0 0 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.75rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  aspect-ratio: 1 / 1;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.card h2 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-weight: normal;
+  font-size: 1.15rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.notes {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.card-link {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--brick);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  border-bottom-color: var(--brick);
+}
+
+.card-link:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 3px;
+}
+
+
+

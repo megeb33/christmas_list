@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Wishlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Christmas Wishlist</h1>
+    <h2>These items are not in any particular order:</h2>
+
+    <div class="wishlist-grid">
+      {% for item in site.data.wishlist %}
+        <div class="card">
+          {% if item.image != "" and item.image != nil %}
+            <div class="card-image">
+              <img src="{{ item.image }}" alt="{{ item.title }}">
+            </div>
+          {% endif %}
+
+          <div class="card-body">
+            <h2>{{ item.title }}</h2>
+
+            {% if item.notes != "" and item.notes != nil %}
+              <p class="notes">{{ item.notes }}</p>
+            {% endif %}
+
+            {% if item.url != "" and item.url != nil %}
+              <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener">View item &rarr;</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+</body>
+</html>
