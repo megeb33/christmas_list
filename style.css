@@ -1,10 +1,10 @@
 :root {
-  --paper: #FFC9CD;
-  --ink: #FFC9CD;
+  --paper: #faf6ef;
+  --ink: #23201b;
   --pine: #FFC9CD;
-  --brick: #FFC9CD;
-  --line: #FFC9CD;
-  --muted: #FFC9CD;
+  --brick: #a1432c;
+  --line: #e2d9c9;
+  --muted: #6f6a5f;
 }
 
 * {
