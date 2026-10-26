@@ -1,8 +1,8 @@
 :root {
   --paper: #faf6ef;
   --ink: #23201b;
-  --pine: #FFC9CD;
-  --brick: #a1432c;
+  --pine: #2f4b3c; /* this is the header */
+  --brick: #FFC9CD;
   --line: #e2d9c9;
   --muted: #6f6a5f;
 }
