@@ -1,10 +1,10 @@
 :root {
-  --paper: #faf6ef;
-  --ink: #23201b;
-  --pine: #2f4b3c;
-  --brick: #a1432c; /* this is the header?? */
-  --line: #FFC9CD; /* looks like the view item link */
-  --muted: #6f6a5f;
+  --paper: #FF0000;
+  --ink: #FF8000;
+  --pine: #FFE100;
+  --brick: #00FF19; /* this is the header?? */
+  --line: ##00D0FF; /* looks like the view item link */
+  --muted: #9900FF;
 }
 
 * {
