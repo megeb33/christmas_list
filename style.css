@@ -1,7 +1,7 @@
 :root {
   --paper: #FFBFC9;
-  --ink: #1F381F;
-  --pine: #254F24;
+  --ink: #1F381F; /* this is the subheader?? */ 
+  --pine: #254F24; /* this is the header?? */
   --brick: #00FF19; /* this is the header?? */
   --line: ##00D0FF; /* looks like the view item link */
   --muted: #9900FF;
