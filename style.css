@@ -4,7 +4,7 @@
   --pine: #254F24; /* this is the header?? */
   --brick: #00FF19; /* this is the header?? */
   --line: ##00D0FF; /* looks like the view item link */
-  --muted: #9900FF;
+  --muted: #9900FF; /* this is the description */ 
 }
 
 * {
